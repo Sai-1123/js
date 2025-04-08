@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let prime=2;prime<=50;prime++){
+        flag=(true);
+        for(i=2;i<prime;i++){
+            if(prime%i==0){
+                // console.log(prime,"it is not a prime");
+                flag=false;
+                break
+            }
+        }
+        if(flag){
+            console.log(prime,"is a prime");
+        }
+        }
+
+        let str="hello"
+        let reverse=""
+        for(i in str){
+            reverse = str[i] + reverse          
+            }
+          console.log(reverse);
+
+//           var str = "hello";
+// var reverse = "";
+
+// for (var i = str.length - 1; i >= 0; i--) {
+//     reverse += str[i];
+// }
+
+// console.log(reverse); // Output: "olleh"
+
+
+var arr=[23,54,67,64,46,95,98]
+var j=""
+for(var j of arr){
+    if(j%2==0){ 
+        console.log(j);     
+    }
+}
+
+// let arr = [23, 54, 67, 64, 46, 95, 98];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//         console.log(arr[i]); // Output even numbers
+//     }
+// }
+
+let str1 = "258309"
+let max= str1[0];
+let maxIndex= 0;
+let k =""
+for(let k in str1){
+    if(str1[k]>max){
+    max=str1[k];
+    maxIndex=k;
+    }
+}
+console.log(max);
+console.log(maxIndex);
+
+let person = {
+    name: "John",
+    age: 25
+};
+for (let [key, value] of Object.entries(person)) {
+    console.log("Key:", key, "Value:", value);
+}
+
+// 
+// in for in loop
+// for(let i in person){
+// console.log("key:",i,"value:",person[i]);
+// }                                               //
+
+
+
+
+          
+        
+    </script>
+</body>
+</html>
